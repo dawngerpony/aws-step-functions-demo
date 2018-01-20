@@ -1,0 +1,16 @@
+{
+  "Comment": "A Hello World example of the Amazon States Language using an AWS Lambda function",
+  "StartAt": "step1",
+  "States": {
+    "step1": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:eu-west-1:732956588665:function:step1-dev-app",
+      "Next": "step2"
+    },
+    "step2": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:eu-west-1:732956588665:function:step2-dev-app",
+      "End": true
+    }
+  }
+}

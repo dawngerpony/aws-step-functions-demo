@@ -20,6 +20,18 @@ Steps
 
         make deploy
 
+
+Offline development
+-------------------
+
+1. Run offline:
+
+        TBD
+
+1. Test:
+
+        http POST localhost:3000 bucket=step-function-test1
+
 Resources
 ---------
 
